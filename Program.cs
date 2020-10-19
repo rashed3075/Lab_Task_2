@@ -77,7 +77,52 @@ namespace Lab_Task_2
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine();
+
+            int row, col;
+            for(row=1;row<=5;row++)
+            {
+                for(col=row;col<=(row+4);col++)
+                {
+                    Console.Write(col);
+                }
+                Console.WriteLine();
+            }
+
+            Console.WriteLine();
+
+            for(row=1;row<=5;row++)
+            {
+                for(col=1;col<=(row-1);col++)
+                {
+                    Console.Write(" ");
+                }
+                for(col=row;col<=row;col++)
+                {
+                    Console.Write(col);
+                }
+                Console.WriteLine();
+            }
+
+            Console.WriteLine();
             
+            for(row=1;row<=5;row++)
+            {
+                for(col=1;col<=row;col++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+            for(row=4;row>=1;row--)
+            {
+                for(col=1;col<=row;col++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+
         }
     }
 }
